@@ -1,3 +1,27 @@
 /*=================================================================== */
         /*---------- General Styles -------------*/
 /*==================================================================== */
+.navbar {
+    height: 60px;
+}
+.container-fluid {
+    padding: 50px;
+}
+
+.container-fluid h1 {
+    margin-top: 50px;
+}
+
+.container-fluid p {
+    margin: 20px 0px;
+}
+
+.pic-con {
+    width: 400px;
+    height: 300px;
+}
+
+.pic-con img{
+    width: 100%;
+    display: none;
+}
