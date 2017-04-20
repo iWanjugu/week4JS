@@ -23,5 +23,19 @@
 
 .pic-con img{
     width: 100%;
+}
+
+._showing {
     display: none;
+    text-align: center;
+}
+
+.clickable {
+    cursor: pointer;
+    color: #0088cc;
+}
+
+.clickable:hover {
+    text-decoration: underline;
+    text-decoration-color: #0088cc;
 }
