@@ -1,114 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--External Styles -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-
-    <!-- Internal Styles -->
-	<style>
-        @media (max-width: 62em) {
-            .navbar-nav {
-                padding-top: .425rem;
-                padding-left: 0.75rem;
-            }
-            .navbar-nav .nav-item {
-                float: none;
-            }
-            .navbar-brand {
-                float: right;
-            }
-            .navbar-brand,
-            .navbar-nav .nav-item {
-                display: block;
-            }
-            .navbar-nav .nav-item + .nav-item {
-                margin-left: 0;
-            }
-            .dropdown-menu {
-                position: relative;
-                float: none;
-            }
-        }
-    </style>
-
-
-    <!-- my styles -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::Welcome To JavaScript::</title>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    
+    <!-- Styelesheets -->
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/custom_styles.css">
-    <link rel="stylesheet" href="css/style.css">
-
-
-    <!-------------------------------------------->
-    <!-- SCRIPTS--->
-    <!-- External Scripts -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
-
-
-    <!-- Internal Scripts -->
-	<script type="text/javascript" src="simple.js">
-	</script>
-
-    <title>Week 4: Simple Js</title>
-
-
 </head>
 
 <body>
-
-    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
-
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="index.html"></a>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Page</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Page</a>
-                </li>
-                <!-- Dropdown - Delete from this comment to the next if you don't want it -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Separted</a>
+    <div>
+        <div class="header-blue">
+            <nav class="navbar navbar-default navigation-clean-search">
+                <div class="container">
+                    <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">Wanjugu's JS Stuff</a>
+                        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
                     </div>
-                </li>
-            </ul>
+                    <div class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active" role="presentation"><a href="#">Link</a></li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Content <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li role="presentation"><a href="datatypes.html">Data Types</a></li>
+                                    <li role="presentation"><a href="simpleeffects.html">Simple Effects</a></li>
+<!--
+                                    <li role="presentation"><a href="#">Week 2</a></li>
+                                    <li role="presentation"><a href="#">Week 3</a></li>
+-->
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="navbar-form navbar-right" target="_self">
+                            <div class="form-group">
+                                <label class="control-label" for="search-field"><i class="glyphicon glyphicon-search"></i></label>
+                                <input class="form-control search-field" type="search" name="search" id="search-field">
+                            </div>
+                        </form>
+<!--
+                        <p class="navbar-text navbar-right">
+                            <a class="navbar-link login" href="#">Log In</a> 
+                            <a class="btn btn-default action-button" role="button" href="#">Sign Up</a>
+                        </p>
+-->
+                    </div>
+                </div>
+            </nav>
+            <div class="container hero f-center">
+                <div class="row col f-center">
+                    <div class="cntnt f-vert">
+                        <h1>The revolution is here.</h1>
+                        <p>JavaScript JavaScript JavaScript JavaScript JavaScript JavaScript JavaScript JavaScript JavaScript JavaScriptJavaScript JavaScript JavaScript JavaScript </p>
+                        <button class="btn btn-default btn-lg action-button" type="button">Learn More</button>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
 
-    </nav>
-
-	<div class="container-fluid f-vert">
-        <h1>peek-a-boo</h1>
-
-<!--        <div></div>-->
-
-        <p>Let's play peek-a-boo. Click here to see the surprise!</p>
-
-        <div class="pic-con f-center">
-            <img src="img/9.jpg">
-        </div>
-
-	</div>
-
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>
