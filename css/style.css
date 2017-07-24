@@ -32,10 +32,43 @@
 
 .clickable {
     cursor: pointer;
-    color: #0088cc;
+    color: #ccc;
+/*    text-decoration: underline;*/
+
 }
 
 .clickable:hover {
     text-decoration: underline;
-    text-decoration-color: #0088cc;
+    text-decoration-color: #ccc;
+}
+
+
+/*=================================================================== */
+        /*---------- TTWP Styles -------------*/
+/*==================================================================== */
+
+.header-blue .hero .ttwp p {
+    width: 90% !important;
+}
+
+.ttwp .btn {
+    margin-right: 20px;
+}
+
+#goodbye {
+    color: #555;
+}
+
+.ttwp .row {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.ttwp .col-md-6, .ttwp ul {
+    float: left;
+    text-align:
+        left
+
+
+
 }
